@@ -24,12 +24,12 @@ var changeState = function (state) {
 	} else if (state ==3) {
 		var success = setTimeout(function ()
 			{
-				var randomNumber = Math.random(Math.random()*10);
+				var randomNumber = Math.round(Math.random()*10);
 				
 				console.log('randomNumber:', randomNumber)
 
 				//random
-				if (randomNumber > 5) {
+				if (randomNumber > 3) {
 					changeState(4);
 
 				} else {
